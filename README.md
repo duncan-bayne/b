@@ -9,9 +9,9 @@ The GPL is specifically designed to reduce the usefulness of GPL-licensed code t
 
 ##usage
 
-First, create `$HOME/.brc` that contains just the Bamboo URI for the server you're interested in.  E.g.:
+First, create `$HOME/.brc` that contains just the root URI for the server you're interested in.  E.g.:
 
-    http://master.cd.vpc.realestate.com.au/rest/api/latest/result.json
+    http://my.bamboo.server/
 
 Then, link `b` to where your scripts live (e.g. `$HOME/bin`) and use it like so:
 

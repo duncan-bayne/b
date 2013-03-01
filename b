@@ -6,7 +6,7 @@ require 'restclient'
 command = ARGV.join(' ')
 bamboo_uri = File.read(File.join(ENV['HOME'], '.brc')).strip
 
-results = RestClient.get(bamboo_uri)
+results = RestClient.get(URI.join(bamboo_uri, '/rest/api/latest/result.json').to_s)
 result_data = JSON.parse(results)['results']['result']
 
 failed_results = result_data.select { |result| result['state'] != 'Successful' }
