@@ -9,7 +9,7 @@ The GPL is specifically designed to reduce the usefulness of GPL-licensed code t
 
 ##usage
 
-First, create `$HOME/.brc` that contains just the root URI for the server you're interested in.  E.g.:
+First, set the environment variable BAMBOO_URI to contain just the root URI for the server you're interested in.  E.g.:
 
     http://my.bamboo.server/
 
