@@ -1,5 +1,5 @@
 #b
-b looks in `$HOME/.brc` for a Bamboo server URI, and warns the user before continuing to run a command if there are any failing plans.
+b looks in the environment variable `BAMBOO_URI` for a Bamboo server URI, and warns the user before continuing to run a command if there are any failing plans.
 
 ##licence
 b is licensed under the [GNU Lesser General Public License](http://www.gnu.org/licenses/lgpl.html).
